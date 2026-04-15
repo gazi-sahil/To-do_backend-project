@@ -1,0 +1,14 @@
+{
+  "name": "college-todo-fullstack",
+  "private": true,
+  "scripts": {
+    "db": "docker compose up -d",
+    "db:down": "docker compose down",
+    "dev": "concurrently -n api,web -c yellow,cyan \"npm run start --prefix server\" \"npm run dev --prefix client\"",
+    "start": "docker compose up -d && npx wait-on -t 90 tcp:127.0.0.1:27017 && concurrently -n api,web -c yellow,cyan \"npm run start --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "wait-on": "^8.0.2"
+  }
+}
