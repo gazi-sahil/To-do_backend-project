@@ -86,4 +86,4 @@ Backend Project/
 
 ## Authors
 
-Shahzeb Alam - College Project
+Shikhar - College Project
