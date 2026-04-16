@@ -86,4 +86,4 @@ Backend Project/
 
 ## Authors
 
-[Your Name] - College Project
+Shahzeb Alam - College Project
